@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./img/cork.png);
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.edu-tas-beginner {
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.head {
+  text-align: center;
+  background-image: url(./img/wall.png);
+  background-size: cover;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 30px;
+  font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.photo-40 {
+  margin-top: 40px;
+  width: calc(100% / 3);
+  height: 80px;
+  background-color: white;
+}
