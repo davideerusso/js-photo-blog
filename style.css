@@ -20,6 +20,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  margin-bottom: 60px;
 }
 a {
   text-decoration: none;
@@ -107,6 +108,9 @@ a {
   border-radius: 10px;
   font-size: 20px;
   margin-bottom: 20px;
+  border: 0;
+  background-color: dodgerblue;
+  color: white;
 }
 .grey {
   content: "";
