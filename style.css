@@ -87,7 +87,7 @@ a {
 .overlay-grey {
   position: absolute;
 
-  transform: translate(0%, -75%);
+  transform: translate(0%, -100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,4 +124,58 @@ a {
 .img-large {
   width: 50%;
   height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .photo-40 {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overlay-grey {
+    position: absolute;
+
+    transform: translate(0%, -200%);
+  }
+  .img-large {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .photo-40 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head {
+    font-size: 18px;
+  }
+  .overlay-grey {
+    position: absolute;
+
+    transform: translate(0%, -580%);
+  }
+  .img-large {
+    width: 80%;
+    height: 80%;
+  }
 }

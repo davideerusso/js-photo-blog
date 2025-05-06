@@ -40,8 +40,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/").then((response) => {
 
 const generatePostCard = (post) => {
   const cardHtml = ` 
-    <div  class="photo-40 card" data-post-id="${post.id}">
-      <div> 
+    <div  class="photo-40 card row" data-post-id="${post.id}">
+      <div class="col-sm-12 col-md-4"> 
         <img src="${post.url}" alt="" />
         </div>
         <div class="info-photo"> 
