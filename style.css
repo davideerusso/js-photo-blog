@@ -9,6 +9,7 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(./img/cork.png);
+  position: relative;
 }
 ul {
   list-style: none;
@@ -78,21 +79,21 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
 }
 .none {
   display: none;
 }
 .overlay-grey {
-  position: absolute;
-
-  transform: translate(0%, -100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
-  flex-direction: column;
   z-index: 1;
 }
 .photo-40:hover {
@@ -114,16 +115,17 @@ a {
 }
 .grey {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.5);
 }
 .img-large {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 
 @media screen and (max-width: 800px) {
@@ -141,14 +143,10 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .overlay-grey {
-    position: absolute;
 
-    transform: translate(0%, -200%);
-  }
   .img-large {
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -169,11 +167,7 @@ a {
   .head {
     font-size: 18px;
   }
-  .overlay-grey {
-    position: absolute;
 
-    transform: translate(0%, -580%);
-  }
   .img-large {
     width: 80%;
     height: 80%;
